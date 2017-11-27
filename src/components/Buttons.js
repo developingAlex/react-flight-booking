@@ -10,7 +10,7 @@ function Button({children, primary, magic, href}) {
     className += ' btn--magic'
   }
 
-  const renderLink = !!href
+  const renderLink = !!href //if a href is passed 
 
   if (renderLink) {
     return(
