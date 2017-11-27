@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({title, primary, magic}) {
+function Button({children, primary, magic}) {
   let className = 'btn'
 
   if (primary){
@@ -12,7 +12,7 @@ function Button({title, primary, magic}) {
   // in the below line ...= { className } > : the curly braces is the syntax analogous to <%= %> in .erb files.
   return (
     <button className={ className } >
-      { title }
+      { children }
       
     </button>
   )

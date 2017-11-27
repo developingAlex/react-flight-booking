@@ -13,9 +13,14 @@ class App extends Component {
         < Emoji cat />
         < Emoji emotion='sad' />
         < Emoji cat emotion='sad' />
-        <Button title='find flights' primary />
-        <Button title='sign up' />
-        <Button title='Enter Competition' magic />
+        <Button primary>
+          Find Flights
+        </Button>
+        <Button>
+          < Emoji cat emotion='sad' />
+          Sign Up
+        </Button>
+        <Button children='Enter Competition' magic />
         <ul>
           <li>first</li>
           <li>second</li>
