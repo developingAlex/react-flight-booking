@@ -102,8 +102,24 @@ The original React readme file is full of content I haven't seen before since th
 
     export default Emoji
     ```
-1. 
-
-
-
+1. Decide we might want more than one emotion so change the logic in Emoji to be more versatile:
+    ```javascript
+    ⋮
+    function Emoji ( {
+      emotion = 'sad',
+      cat = false
+    }) {
+        let text = '🐱'
+        if (cat) {
+          if (emotion === 'sad'){
+    ⋮
+    ```
+    You can then apply it in App.js with:
+    ```javascript
+    < Emoji cat emotion='sad' />
+    ```
+    instead of 
+    ```javascript
+    < Emoji cat sad />
+    ```
 

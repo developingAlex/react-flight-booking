@@ -8,7 +8,7 @@ function Emoji ( {
     if (cat) {
       if (emotion === 'sad'){
         text = '😿'
-      }
+      } 
       else{
         text = '😺'
       }
