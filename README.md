@@ -122,4 +122,36 @@ The original React readme file is full of content I haven't seen before since th
     ```javascript
     < Emoji cat sad />
     ```
+1. next up, rendering emoji within the button: 
+1. In the Buttons.js file: change the title to children:
+    ```javascript
+    function Button({children, primary, magic}) {
+      let className = 'btn'
 
+      if (primary){
+        className += ' btn--primary'
+      }
+      if (magic) {
+        className += ' btn--magic'
+      }
+      // in the below line ...= { className } > : the curly braces is the syntax analogous to <%= %> in .erb files.
+      return (
+        <button className={ className } >
+          { children }
+          
+        </button>
+      )
+    }
+    ```
+1. Examples of usage in App.js:
+    ```javascript
+    <Button primary>
+      Find Flights
+    </Button>
+    <Button>
+      < Emoji cat emotion='sad' />
+      Sign Up
+    </Button>
+    <Button children='Enter Competition' magic />
+    ```
+1. 
