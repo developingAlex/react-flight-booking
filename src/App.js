@@ -20,7 +20,9 @@ class App extends Component {
           < Emoji cat emotion='sad' />
           Sign Up
         </Button>
-        <Button children='Enter Competition' magic />
+        <Button magic href='/competition'>
+          Enter Competition
+        </Button>
         <ul>
           <li>first</li>
           <li>second</li>

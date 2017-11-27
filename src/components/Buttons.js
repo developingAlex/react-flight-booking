@@ -11,7 +11,14 @@ function Button({children, primary, magic, href}) {
   }
 
   const renderLink = !!href //if a href is passed 
+  const Component = renderLink ? 'a' : 'button' //capital c component to denote it's custom
 
+  return(
+    <Component href={ href } className={ className }>
+      { children }
+    </Component>
+  )
+  
   if (renderLink) {
     return(
       <a href={ href } className={ className }>
