@@ -1,17 +1,17 @@
 import React from 'react'
 
-function Button(props) {
+function Button({title, primary, magic}) {
   let className = 'btn'
 
-  if (props.primary){
+  if (primary){
     className += ' btn--primary'
   }
-  if (props.magic) {
+  if (magic) {
     className += ' btn--magic'
   }
   return (
     <button className={ className } >
-      { props.title }
+      { title }
       
     </button>
   )
