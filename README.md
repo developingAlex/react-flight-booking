@@ -61,10 +61,59 @@ The original React readme file is full of content I haven't seen before since th
       border: 1px, solid #aaa;
       border-radius: 3px;
     }
+
+    .btn--primary {
+      background-color: tomato;
+    }
     ```
+1. Button.js should now look like:
+    ```javascript
+    import React from 'react'
 
-...
+    function Button(props) {
+      let className = 'btn'
 
+    if (props.primary) {
+      className += ' btn--primary'
+    }
+
+      return (
+        <button className={ className }>
+          { props.title } 
+        </button>
+      )
+    }
+
+    export default Button
+    // modern way of writing modeul.exports = Button
+    ```
+1. Apps.js should now look like:
+    ```javascript
+    import React, { Component } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+    import Button from './components/Button'
+    class App extends Component {
+      render() {
+        return (
+          <div className="App">
+          <h1> This is a heading </h1>
+          <Button title = 'Find Flights' primary={ true } />
+          <Button title = 'Sign Up' />
+          <Button title = 'Enter Competition' />
+          <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+          <p>deleted all content</p>
+          </ul>
+        </div>
+        );
+      }
+    }
+
+    export default App;
+    ```
 1. Added react developer tools for your browser(I'm using firefox) so you can view source in your browser https://addons.mozilla.org/en-US/firefox/addon/react-devtools/
 
 1. create a new file in your components folder called **Emoji.js**

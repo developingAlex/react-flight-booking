@@ -10,6 +10,16 @@ function Button({children, primary, magic, href}) {
     className += ' btn--magic'
   }
 
+  // href = undefined
+  // href == null // => true
+  // href != null // => flase
+  // !href //=> true
+  // !!href //=> false
+
+  // href = '/competition'
+  // href == null // => true
+
+
   const renderLink = !!href //if a href is passed 
   const Component = renderLink ? 'a' : 'button' //capital c component to denote it's custom
 
@@ -26,13 +36,15 @@ function Button({children, primary, magic, href}) {
       </a>
     )
   }
-  // in the below line ...= { className } > : the curly braces is the syntax analogous to <%= %> in .erb files.
-  return (
-    <button className={ className } >
-      { children }
-      
-    </button>
-  )
+  else{
+    // in the below line ...= { className } > : the curly braces is the syntax analogous to <%= %> in .erb files.
+    return (
+      <button className={ className } >
+        { children }
+        
+      </button>
+    )
+  }
 }
 
 export default Button
