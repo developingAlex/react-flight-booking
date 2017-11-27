@@ -1,12 +1,12 @@
 import React from 'react'
 
 function Emoji ( {
-  sad = false,
+  emotion = 'sad',
   cat = false
 }) {
     let text = '🐱'
     if (cat) {
-      if (sad){
+      if (emotion === 'sad'){
         text = '😿'
       }
       else{
@@ -14,7 +14,7 @@ function Emoji ( {
       }
     }
     else{
-      if (sad){
+      if (emotion === 'sad'){
         text = '😢'
       }
       else{
