@@ -65,6 +65,10 @@ The original React readme file is full of content I haven't seen before since th
     .btn--primary {
       background-color: tomato;
     }
+
+    .btn--magic{
+      background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    }
     ```
 1. Button.js should now look like:
     ```javascript
