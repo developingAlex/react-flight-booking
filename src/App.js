@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Button from './components/Buttons';  
+import Emoji from './components/Emoji';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1> this is a heading </h1>
+        < Emoji />
+        < Emoji cat />
+        < Emoji sad />
+        < Emoji cat sad />
         <Button title='find flights' primary />
         <Button title='sign up' />
         <Button title='Enter Competition' magic />
