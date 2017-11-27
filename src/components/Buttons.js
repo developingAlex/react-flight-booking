@@ -9,6 +9,7 @@ function Button({title, primary, magic}) {
   if (magic) {
     className += ' btn--magic'
   }
+  // in the below line ...= { className } > : the curly braces is the syntax analogous to <%= %> in .erb files.
   return (
     <button className={ className } >
       { title }
