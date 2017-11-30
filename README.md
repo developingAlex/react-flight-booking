@@ -1,3 +1,5 @@
+20171127-morning
+previous (and first) react class exercise: [react-flight-booking](https://github.com/developingAlex/react-flight-booking)
 # First React app - follow along lesson
 
 ## ORIGINAL REACT README IS AVAILABLE IN THE FILE originalREADME.md
@@ -207,4 +209,3 @@ The original React readme file is full of content I haven't seen before since th
     </Button>
     <Button children='Enter Competition' magic />
     ```
-1. 
