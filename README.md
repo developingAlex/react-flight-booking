@@ -93,7 +93,7 @@ The original React readme file is full of content I haven't seen before since th
     export default Button
     // modern way of writing modeul.exports = Button
     ```
-1. Apps.js should now look like:
+1. App.js should now look like:
     ```javascript
     import React, { Component } from 'react';
     import logo from './logo.svg';
